@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="jpg">
+</head>
+<body>
+    <header><h1>Practice project</h1></header>
+    <h2>Rock-Paper-Scissors</h2>
+    <h2 class="Game">Game</h2>
+    <p>
+        This is a simple Rock Paper Scissors game where you can play against the computer. The game is built using HTML, CSS, and JavaScript. You can choose your move and see the result of the game.
+    </p>
+    <div class="game-container">
+        <button 
+        onclick="
+        const computerChoice = Math.random();
+        if(computerChoice <= 1/3){
+            alert('it\'s a tie! 😮 computer ==> 👊')
+        } else if(computerChoice > 1/3 && computerChoice <= 2/3){
+            alert('you lose 😣 computer ==>🖐️')
+        } else {
+            alert('you win!! 🤯🤯 computer ==>✌️')
+        }
+        ">👊</button>
+        <button onclick="
+        const computerChoice2 = Math.random();
+        if(computerChoice2 <= 1/3){
+            alert('you win!! 🤯🤯 computer ==> 👊')
+        } else if(computerChoice2 > 1/3 && computerChoice2 <= 2/3){
+            alert('it\'s a tie! 😮 computer ==>🖐️')
+        } else {
+            alert('you lose 😣 computer ==>✌️')
+        }
+        ">🖐️</button>
+        <button onclick="
+        const computerChoice3 = Math.random();
+        if(computerChoice3 <= 1/3){
+            alert('you lose 😣 computer ==> 👊')
+        } else if(computerChoice3 > 1/3 && computerChoice3 <= 2/3){
+            alert('you win!! 🤯🤯 computer ==>🖐️')
+        } else {
+            alert('it\'s a tie! 😮 computer ==>✌️')
+        }
+        ">✌️</button>
+    </div>
+</body>
+</html>
